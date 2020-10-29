@@ -1,0 +1,55 @@
+extends layout
+
+block content
+		
+	.pricing-header.px-3.py-3.pt-md-5.pb-md-4.mx-auto.text-center
+		h1.display-4 Pricing
+		p.lead
+			| Quickly build an effective pricing table for your potential customers with this Bootstrap example. It&apos;s built with default Bootstrap components and utilities with little customization.
+	.container
+		.card-deck.mb-3.text-center
+			.card.mb-4.box-shadow
+				.card-header
+					h4.my-0.font-weight-normal Free
+				.card-body
+					h1.card-title.pricing-card-title
+						| £0 
+						small.text-muted / mo
+					ul.list-unstyled.mt-3.mb-4
+						li access to social functions
+					button.btn.btn-lg.btn-block.btn-outline-primary(type='button' href='/store') Sign up for free
+					
+			.card.mb-4.box-shadow
+				.card-header
+					h4.my-0.font-weight-normal Not So Free
+				.card-body
+					h1.card-title.pricing-card-title
+						| £5
+						small.text-muted / mo
+					ul.list-unstyled.mt-3.mb-4
+						li 10 free patterns a month
+						li access to tutorial materials
+					button.btn.btn-lg.btn-block.btn-outline-primary(type='button') Sign up
+					
+			.card.mb-4.box-shadow
+				.card-header
+					h4.my-0.font-weight-normal Premium
+				.card-body
+					h1.card-title.pricing-card-title
+						| £10 
+						small.text-muted / mo
+					ul.list-unstyled.mt-3.mb-4
+						li 20 Free patterns a month
+						br
+						li access to tutorial materials
+						br
+						li upload and sell your patterns
+						br
+						li email support available
+						br
+						li 24hr technical support
+						br
+						li eat the rich
+						br
+						li value for money
+					button.btn.btn-lg.btn-block.btn-outline-primary(type='button') Sign up
