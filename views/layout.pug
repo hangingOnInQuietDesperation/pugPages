@@ -1,16 +1,18 @@
 //layout.pug
 doctype html
 html
+
 	head
-		title= '${title}'
+		title= `${title}`
 		include styles
+		meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+
 
 	body
 		
-		div.container-fluid
+		div.flex-container
 		
 			block content
-			
 			
 		include bottomBar
 	

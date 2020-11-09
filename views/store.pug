@@ -1,130 +1,35 @@
 extends layout
+	
+mixin card(image, itemName, stars, cost)
+	.card
+		img.card-img-top(src=image alt='Card image')
+		.card-body
+			h4=itemName
+				.rating
+				- for (var i = 0; i < stars; ++i) {
+					span.fas.fa-star
+					// TODO: add half star if applicable
+					- }
+				
+			a.btn.btn-primary.stretched-link(href='/signUp') #{cost} tokens
 
 block content
 
-		.card-deck.mb-3.text-center
-		
-			.card.mb-4.shadow.sm
-					img.card-img-top(src='/icons/knitting.jpg' alt='Card image' height='300px')
-					.card-body
-						h4 Item Name
-						.rating
-							span.fas.fa-star
-							span.fas.fa-star
-							span.fas.fa-star
-							span.fas.fa-star-half-alt
-							span.far.fa-star
-						a.btn.btn-primary.stretched-link(href='/signUp') Buy Item
-						
-			.card.mb-4.shadow.sm
-					img.card-img-top(src='/icons/knitting.jpg' alt='Card image' height='300px')
-					.card-body
-						h4 Item Name
-						.rating
-							//star
-							span.fas.fa-star
-							span.fas.fa-star
-							span.fas.fa-star
-							//half star
-							span.fas.fa-star-half-alt
-							//empty star
-							span.far.fa-star
-						a.btn.btn-primary.stretched-link(href='/signUp') Buy Item
-			
-			.card.mb-4.shadow.sm
-					img.card-img-top(src='/icons/knitting.jpg' alt='Card image' height='300px')
-					.card-body
-						h4 Item Name
-						.rating
-							span.fas.fa-star
-							span.fas.fa-star
-							span.fas.fa-star
-							span.fas.fa-star-half-alt
-							span.far.fa-star
-						a.btn.btn-primary.stretched-link(href='/signUp') Buy Item
-			
-		.card-deck.mb-3.text-center
-		
-			.card.mb-4.shadow.sm
-					img.card-img-top(src='/icons/knitting.jpg' alt='Card image' height='300px')
-					.card-body
-						h4 Item Name
-						.rating
-							span.fas.fa-star
-							span.fas.fa-star
-							span.fas.fa-star
-							span.fas.fa-star-half-alt
-							span.far.fa-star
-						a.btn.btn-primary.stretched-link(href='/signUp') Buy Item
-						
-			.card.mb-4.shadow.sm
-					img.card-img-top(src='/icons/knitting.jpg' alt='Card image' height='300px')
-					.card-body
-						h4 Item Name
-						.rating
-							//star
-							span.fas.fa-star
-							span.fas.fa-star
-							span.fas.fa-star
-							//half star
-							span.fas.fa-star-half-alt
-							//empty star
-							span.far.fa-star
-						a.btn.btn-primary.stretched-link(href='/signUp') Buy Item
-			
-			.card.mb-4.shadow.sm
-					img.card-img-top(src='/icons/knitting.jpg' alt='Card image' height='300px')
-					.card-body
-						h4 Item Name
-						.rating
-							span.fas.fa-star
-							span.fas.fa-star
-							span.fas.fa-star
-							span.fas.fa-star-half-alt
-							span.far.fa-star
-						a.btn.btn-primary.stretched-link(href='/signUp') Buy Item
-						
-		.card-deck.mb-3.text-center
-		
-			.card.mb-4.shadow.sm
-					img.card-img-top(src='/icons/knitting.jpg' alt='Card image' height='300px')
-					.card-body
-						h4 Item Name
-						.rating
-							span.fas.fa-star
-							span.fas.fa-star
-							span.fas.fa-star
-							span.fas.fa-star-half-alt
-							span.far.fa-star
-						a.btn.btn-primary.stretched-link(href='/signUp') Buy Item
-						
-			.card.mb-4.shadow.sm
-					img.card-img-top(src='/icons/knitting.jpg' alt='Card image' height='300px')
-					.card-body
-						h4 Item Name
-						.rating
-							//star
-							span.fas.fa-star
-							span.fas.fa-star
-							span.fas.fa-star
-							//half star
-							span.fas.fa-star-half-alt
-							//empty star
-							span.far.fa-star
-						a.btn.btn-primary.stretched-link(href='/signUp') Buy Item
-			
-			.card.mb-4.shadow.sm
-					img.card-img-top(src='/icons/knitting.jpg' alt='Card image' height='300px')
-					.card-body
-						h4 Item Name
-						.rating
-							span.fas.fa-star
-							span.fas.fa-star
-							span.fas.fa-star
-							span.fas.fa-star-half-alt
-							span.far.fa-star
-						a.btn.btn-primary.stretched-link(href='/signUp') Buy Item
-						
-		
-						
-		
+	+card('/icons/knitting.jpg', 'hat', 5, 10)
+	+card('/icons/knitting.jpg', 'scarf', 3, 5)
+	+card('/icons/knitting.jpg', 'gloves', 2, 6 )
+	+card('/icons/knitting.jpg', 'hat', 1, 2, 5)
+	+card('/icons/knitting.jpg', 'scarf', 5, 1)
+	+card('/icons/knitting.jpg', 'gloves', 3, 2)
+	+card('/icons/knitting.jpg', 'hat', 2, 3)
+	+card('/icons/knitting.jpg', 'scarf', 5, 5)
+	+card('/icons/knitting.jpg', 'gloves', 4, 6)
+	+card('/icons/knitting.jpg', 'hat', 5, 10)
+	+card('/icons/knitting.jpg', 'scarf', 3, 5)
+	+card('/icons/knitting.jpg', 'gloves', 2, 6 )
+	+card('/icons/knitting.jpg', 'hat', 1, 2, 5)
+	+card('/icons/knitting.jpg', 'scarf', 5, 1)
+	+card('/icons/knitting.jpg', 'gloves', 3, 2)
+	+card('/icons/knitting.jpg', 'hat', 2, 3)
+	+card('/icons/knitting.jpg', 'scarf', 5, 5)
+	+card('/icons/knitting.jpg', 'gloves', 4, 6)
